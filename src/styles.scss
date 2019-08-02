@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.TopNav{
+  background: green;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.calendar{
+  display:flex;
+  flex-wrap:wrap;
+  .cell{
+    background-color: rgb(30, 180, 38);
+    padding: 10px;
+    width: calc(100%/7);
+    height: 50px;
+  }
+  .cell:nth-Child(2n){
+    background-color: rgb(9, 156, 224);
+  }
+  .cell.week{
+    background-color:black;
+    color: white;
+  }
+}
